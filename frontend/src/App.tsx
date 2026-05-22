@@ -4,6 +4,7 @@ import ClosetPage from "./pages/ClosetPage";
 import ClosetRegisterPage from "./pages/ClosetRegisterPage";
 import HomePage from "./pages/HomePage";
 import PlaceholderPage from "./pages/PlaceholderPage";
+import RecommendationResultPage from "./pages/RecommendationResultPage";
 import RecommendationSelectPage from "./pages/RecommendationSelectPage";
 import UserProfilePage from "./pages/UserProfilePage";
 
@@ -15,7 +16,7 @@ const App = () => (
       <Route path="/closet" element={<ClosetPage />} />
       <Route path="/closet/register" element={<ClosetRegisterPage />} />
       <Route path="/recommend" element={<RecommendationSelectPage />} />
-      <Route path="/recommend/result" element={<PlaceholderPage title="추천 결과" />} />
+      <Route path="/recommend/result" element={<RecommendationResultPage />} />
       <Route path="/community" element={<PlaceholderPage title="커뮤니티" />} />
     </Route>
     <Route path="*" element={<Navigate to="/" replace />} />

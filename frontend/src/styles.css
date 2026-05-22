@@ -796,6 +796,109 @@ a {
   line-height: 1.45;
 }
 
+.result-screen {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+}
+
+.result-reason {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px;
+  color: var(--forest);
+}
+
+.result-reason strong {
+  display: block;
+  font-size: 15px;
+}
+
+.result-reason p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.recommendation-groups {
+  display: grid;
+  gap: 12px;
+}
+
+.recommendation-group {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+}
+
+.recommendation-group header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.recommendation-group h2 {
+  margin: 0;
+  color: var(--forest-strong);
+  font-size: 21px;
+}
+
+.owned-callout {
+  max-width: 126px;
+  padding: 7px 9px;
+  border-radius: 999px;
+  background: var(--forest);
+  color: var(--cotton);
+  font-size: 11px;
+  font-weight: 950;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.group-reason {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.result-card-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.owned-item-frame {
+  border: 2px solid var(--forest);
+  border-radius: 10px;
+  padding: 5px;
+  background: rgba(220, 235, 210, 0.72);
+}
+
+.clothing-card--compact {
+  display: grid;
+  grid-template-columns: 108px 1fr;
+  min-height: 126px;
+}
+
+.clothing-card--compact .clothing-card__image {
+  aspect-ratio: auto;
+  height: 100%;
+}
+
+.clothing-card--compact .clothing-card__body {
+  display: grid;
+  align-content: center;
+}
+
+.save-outfit-button {
+  width: 100%;
+}
+
 @media (max-width: 520px) {
   .app-shell {
     padding: 0;
