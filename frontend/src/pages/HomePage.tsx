@@ -20,7 +20,7 @@ const quickActions = [
   { label: "옷 등록", icon: Plus, to: "/closet/register" },
   { label: "코디 추천", icon: Sparkles, to: "/recommend" },
   { label: "착용 기록", icon: CalendarCheck, to: "/closet" },
-  { label: "AI 미리보기", icon: Bot, to: "/recommend/result" },
+  { label: "AI 미리보기", icon: Bot, to: "/try-on" },
 ];
 
 const HomePage = () => (

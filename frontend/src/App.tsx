@@ -9,6 +9,7 @@ import LoginPage from "./pages/LoginPage";
 import RecommendationResultPage from "./pages/RecommendationResultPage";
 import RecommendationSelectPage from "./pages/RecommendationSelectPage";
 import UserProfilePage from "./pages/UserProfilePage";
+import VirtualTryOnPage from "./pages/VirtualTryOnPage";
 
 const App = () => (
   <Routes>
@@ -22,6 +23,7 @@ const App = () => (
       <Route path="/closet/register" element={<ClosetRegisterPage />} />
       <Route path="/recommend" element={<RecommendationSelectPage />} />
       <Route path="/recommend/result" element={<RecommendationResultPage />} />
+      <Route path="/try-on" element={<VirtualTryOnPage />} />
       <Route path="/community" element={<CommunityPage />} />
       <Route path="/circulation" element={<CirculationPage />} />
     </Route>
