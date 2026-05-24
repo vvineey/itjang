@@ -34,6 +34,16 @@ export type CommunityPost = {
   tags: string[];
 };
 
+export type OutfitPost = {
+  id: number;
+  title: string;
+  author: string;
+  imageUrl: string;
+  tags: string[];
+  likes: number;
+  saves: number;
+};
+
 export type SelectOption = {
   value: string;
   label: string;

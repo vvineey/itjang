@@ -1223,15 +1223,122 @@ a {
   gap: 16px;
 }
 
+.community-upload-button {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 0;
+  border-radius: 999px;
+  background: var(--forest);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(33, 77, 55, 0.18);
+  cursor: pointer;
+}
+
+.community-filter-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 1px;
+  scrollbar-width: none;
+}
+
+.community-filter-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.community-filter-tabs button {
+  flex: 0 0 auto;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--cotton);
+  color: var(--forest);
+  cursor: pointer;
+  font-weight: 850;
+}
+
+.community-filter-tabs button.is-active {
+  background: var(--forest);
+  color: var(--cotton);
+}
+
+.outfit-post-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.outfit-post-card {
+  overflow: hidden;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 10px 26px rgba(33, 77, 55, 0.08);
+}
+
+.outfit-post-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1.18;
+  object-fit: cover;
+}
+
+.outfit-post-card > div {
+  padding: 12px;
+}
+
+.outfit-post-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.outfit-post-card h2 {
+  margin: 6px 0 8px;
+  color: var(--forest-strong);
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.outfit-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.outfit-tags span {
+  color: var(--moss);
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.outfit-post-stats {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.outfit-post-stats span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .community-search {
   display: flex;
   align-items: center;
   gap: 10px;
-  min-height: 46px;
-  padding: 0 14px;
-  border: 1px solid rgba(33, 77, 55, 0.14);
-  border-radius: 999px;
-  background: rgba(255, 250, 240, 0.9);
+  min-height: 50px;
+  padding: 0 15px;
+  border: 0;
+  border-radius: 17px;
+  background: var(--paper);
   color: var(--muted);
 }
 
@@ -1253,6 +1360,8 @@ a {
   grid-template-columns: 104px 1fr;
   min-height: 136px;
   overflow: hidden;
+  border-radius: 20px;
+  background: #ffffff;
 }
 
 .trade-card__image {
@@ -1288,12 +1397,12 @@ a {
 
 .trade-card__top span {
   flex: 0 0 auto;
-  padding: 5px 7px;
+  padding: 6px 8px;
   border-radius: 999px;
-  background: var(--mint);
+  background: rgba(220, 235, 210, 0.78);
   color: var(--forest);
   font-size: 10px;
-  font-weight: 950;
+  font-weight: 850;
 }
 
 .trade-region {

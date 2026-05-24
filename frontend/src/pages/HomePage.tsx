@@ -10,11 +10,11 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import { clothingItems, communityPosts } from "../data/mockData";
+import { clothingItems, outfitPosts } from "../data/mockData";
 
 const todayOutfit = [clothingItems[0], clothingItems[4], clothingItems[12]];
 const waitingItem = clothingItems[10];
-const popularPosts = communityPosts.slice(0, 3);
+const popularPosts = outfitPosts.slice(0, 3);
 
 const quickActions = [
   { label: "옷 등록", icon: Plus, to: "/closet/register" },

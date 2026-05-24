@@ -2,6 +2,7 @@ import type {
   ClothingCategory,
   ClothingItem,
   CommunityPost,
+  OutfitPost,
   RecommendationGroup,
   SelectOption,
 } from "../types";
@@ -440,10 +441,73 @@ export const styleOptions = [
   "시티보이",
 ];
 
+export const outfitPosts: OutfitPost[] = [
+  {
+    id: 1,
+    title: "비 오는 날에도 가볍게",
+    author: "그린데이",
+    imageUrl:
+      "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=900&q=80",
+    tags: ["비오는날", "가디건", "데일리"],
+    likes: 128,
+    saves: 42,
+  },
+  {
+    id: 2,
+    title: "데이트 전용 초록 포인트",
+    author: "초록옷장",
+    imageUrl:
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80",
+    tags: ["데이트", "빈티지", "로퍼"],
+    likes: 96,
+    saves: 31,
+  },
+  {
+    id: 3,
+    title: "셔츠 하나로 단정하게",
+    author: "느린옷장",
+    imageUrl:
+      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=900&q=80",
+    tags: ["면접", "셔츠", "슬랙스"],
+    likes: 74,
+    saves: 19,
+  },
+  {
+    id: 4,
+    title: "주말 피크닉 코디",
+    author: "잇다",
+    imageUrl:
+      "https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&fit=crop&w=900&q=80",
+    tags: ["피크닉", "스커트", "러블리"],
+    likes: 151,
+    saves: 58,
+  },
+  {
+    id: 5,
+    title: "학교 가는 날 꾸안꾸",
+    author: "캠퍼스룩",
+    imageUrl:
+      "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=900&q=80",
+    tags: ["등교", "데님", "스니커즈"],
+    likes: 63,
+    saves: 17,
+  },
+  {
+    id: 6,
+    title: "오래 안 입은 자켓 살리기",
+    author: "옷장연구소",
+    imageUrl:
+      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=900&q=80",
+    tags: ["아우터", "재활용", "차분한"],
+    likes: 112,
+    saves: 36,
+  },
+];
+
 export const communityPosts: CommunityPost[] = [
   {
     id: 1,
-    title: "올리브 셔츠 교환 구해요",
+    title: "올리브 셔츠 교환해요",
     category: "top",
     price: "교환",
     region: "성북구",
@@ -454,7 +518,7 @@ export const communityPosts: CommunityPost[] = [
   },
   {
     id: 2,
-    title: "크림 니트 거의 새상품",
+    title: "크림 반팔 니트",
     category: "top",
     price: "24,000원",
     region: "서대문구",
@@ -465,7 +529,7 @@ export const communityPosts: CommunityPost[] = [
   },
   {
     id: 3,
-    title: "체크 셔츠 빈티지 무드",
+    title: "체크 셔츠",
     category: "top",
     price: "15,000원",
     region: "종로구",
